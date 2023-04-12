@@ -8,7 +8,7 @@ isPalindrome = function() {
 
     if (input.value != null && input.value >= 0) 
     {
-        var inputString = String(input.value);
+        let inputString = String(input.value);
 
         if (inputString == '')
         {
