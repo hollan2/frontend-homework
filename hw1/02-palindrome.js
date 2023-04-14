@@ -13,8 +13,7 @@ isPalindrome = function() {
         if (inputString == '')
         {
             result.innerHTML = "Please input a positive number";
-            result.classList.remove("text-danger");
-            result.classList.remove("text-success");
+            result.style.color = '#024AB6'; //blue
             return;
         }
 
@@ -22,18 +21,15 @@ isPalindrome = function() {
 
         if (inputString == inputReverse) {
             result.innerHTML = "Yes! " + inputString + " is a palindrome! :D"
-            result.classList.remove("text-danger");
-            result.classList.add("text-success");
+            result.style.color = 'green';
         }
         else {
             result.innerHTML = "No! " + inputString + " is not a palindrome! :("
-            result.classList.remove("text-success");
-            result.classList.add("text-danger");
+            result.style.color = '#A80000'; //red
         }
     }
     else {
         result.innerHTML = "Please input a positive number";
-        result.classList.remove("text-danger");
-        result.classList.remove("text-success");
+        result.style.color = '#024AB6'; //blue
     }
 }
