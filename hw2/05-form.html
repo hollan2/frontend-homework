@@ -13,7 +13,7 @@
   <body class="bg-dark">
     <main>
       <div class="container bg-light w-50 mt-5 p-3">
-        <form class="px-5">
+        <form class="px-5" id="form">
           <h1 class="text-center fs-1 fw-bold">Exercise 05 - Form</h1>
           <div class="row mb-3">
             <label for="name" class="form-label">Full Name:</label>
@@ -53,10 +53,10 @@
           </div>
           <div class="row mb-3">
             <div class="col">
-              <button class="btn btn-primary">Submit</button>
+              <button class="btn btn-primary" onclick="submitForm()">Submit</button>
             </div>
             <div class="col">
-              <button class="btn btn-secondary">Reset</button>
+              <button class="btn btn-secondary" onclick="resetForm()">Reset</button>
             </div>
           </div>
         </form>
